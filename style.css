@@ -206,26 +206,7 @@ footer {
 }
 
 audio {
-    width: 100%;
-    outline: none;
-    /* Custom styles */
-    background: #333;
-    border-radius: 8px;
-    padding: 10px;
+    width: 100%; /* Ensures audio controls stretch to the width of the container */
 }
-
-/* Customizing the play button, progress bar, and volume control */
-audio::-webkit-media-controls-play-button,
-audio::-webkit-media-controls-panel {
-    background-color: #4CAF50;
-    color: white;
-    border-radius: 4px;
-}
-
-/* Mozilla specific styles */
-audio::-moz-range-thumb {
-    background: #4CAF50;
-}
-
 
 
