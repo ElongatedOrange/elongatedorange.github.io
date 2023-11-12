@@ -170,6 +170,12 @@ footer {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
+/* Audio Sample Hover Effect */
+.audio-sample:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+
 .album-art {
     max-width: 100%; /* ensures the image is not wider than its container */
     max-height: 200px; /* you can adjust this value as needed */
@@ -200,7 +206,26 @@ footer {
 }
 
 audio {
-    width: 100%; /* Ensures audio controls stretch to the width of the container */
+    width: 100%;
+    outline: none;
+    /* Custom styles */
+    background: #333;
+    border-radius: 8px;
+    padding: 10px;
 }
+
+/* Customizing the play button, progress bar, and volume control */
+audio::-webkit-media-controls-play-button,
+audio::-webkit-media-controls-panel {
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 4px;
+}
+
+/* Mozilla specific styles */
+audio::-moz-range-thumb {
+    background: #4CAF50;
+}
+
 
 
