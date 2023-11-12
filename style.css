@@ -8,26 +8,36 @@ header {
     background: linear-gradient(to right, #6a11cb, #2575fc); /* Blue/purple gradient */
 }
 
+nav {
+    position: sticky;
+    top: 0;
+    background-color: #333; /* Or any color that fits your design */
+    z-index: 1000; /* Ensures the navbar is above other elements */
+}
+
 nav ul {
-    list-style-type: none;
+    margin: 0;
     padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    list-style-type: none;
+    overflow: hidden;
 }
 
 nav ul li {
-    margin-right: 20px;
+    float: left; /* Aligns links horizontally */
 }
 
 nav ul li a {
+    display: block;
     color: white;
+    text-align: center;
+    padding: 14px 16px;
     text-decoration: none;
-    transition: color 0.3s ease-in-out;
 }
 
+/* Change link color on hover */
 nav ul li a:hover {
-    color: #ffcc00;
+    background-color: #ddd;
+    color: black;
 }
 
 section {
