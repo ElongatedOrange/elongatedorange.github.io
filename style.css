@@ -141,3 +141,10 @@ audio {
     vertical-align: middle;
 }
 
+.profile-pic {
+    width: 150px; /* Adjust as necessary */
+    height: 150px; /* Adjust as necessary */
+    border-radius: 50%; /* Circular photo */
+    margin: 20px auto; /* Centering the photo */
+    display: block;
+}
