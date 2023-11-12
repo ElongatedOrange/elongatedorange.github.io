@@ -93,3 +93,10 @@ footer {
 audio {
     width: 100%; /* Makes audio player take full width of the container */
 }
+
+#header-image {
+    width: 100%;
+    display: block; /* This will ensure there are no margins around the image */
+    max-height: 300px; /* Adjust as needed */
+    object-fit: cover; /* This will ensure the aspect ratio is maintained without stretching the image */
+}
