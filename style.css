@@ -9,9 +9,12 @@ header {
 }
 
 nav {
-    background: #121212; /* Adjust to match your header background */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    position: sticky;
+    top: 0;
+    z-index: 1000; /* Ensure it's higher than other elements */
+    background-color: #333; /* Or any color that fits your design */
 }
+
 
 nav ul li a {
     padding: 20px 15px; /* More padding for a larger touch area */
@@ -165,10 +168,23 @@ footer {
 }
 
 .album-art {
-    width: 100%;
-    height: auto;
-    /* Removing individual image size to make it responsive within grid */
+    max-width: 100%; /* ensures the image is not wider than its container */
+    max-height: 200px; /* you can adjust this value as needed */
+    display: block; /* removes any extra space around the image */
+    object-fit: cover; /* ensures the image covers the area, can be changed to 'contain' to fit the whole image */
+    margin: 0 auto; /* centers the image in its container if it's not as wide */
+    border-radius: 5px; /* optional: adds rounded corners to the image */
 }
+
+.featured-album-art {
+    max-width: 100%; /* ensures the image is not wider than its container */
+    max-height: 300px; /* adjust this value to fit the desired design */
+    display: block; /* removes any extra space around the image */
+    object-fit: cover; /* ensures the image covers the area, can be changed to 'contain' to fit the whole image */
+    margin: 0 auto; /* centers the image in its container if it's not as wide */
+    border-radius: 5px; /* optional: adds rounded corners to the image */
+}
+
 
 .audio-info {
     padding: 15px;
